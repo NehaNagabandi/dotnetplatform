@@ -1,0 +1,44 @@
+using System;
+
+
+namespace hotelbill
+{
+    class MainClass
+    {
+        public static void Main(String[] args)
+        {
+            string str;
+            do
+            {
+                Console.WriteLine("1.tea");
+                Console.WriteLine("2.coffee");
+                Console.WriteLine("3.pepsi");
+                Console.WriteLine("enter your choice");
+                int ch = Convert.ToInt32(Console.ReadLine());
+                switch (ch)
+                {
+                    case 1:
+                        {
+                            Console.WriteLine("Your Tea");
+                            break;
+
+                        }
+                    case 2:
+                        {
+                            Console.WriteLine("Your coffee");
+                            break;
+                        }
+                    case 3:
+                        {
+                            Console.WriteLine("Your pepsi");
+                            break;
+                        }
+                }
+                Console.WriteLine("would you like have more y/n?");
+                str = Console.ReadLine();
+
+            }
+            while (str == "y");
+        }
+    }
+}
